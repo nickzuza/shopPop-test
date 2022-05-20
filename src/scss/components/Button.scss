@@ -1,0 +1,27 @@
+.Button {
+    padding: 8px 12px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    &__Icon {
+        &-left {
+            display: block;
+            margin-right: 8px;
+        }
+
+        &-right {
+            display: block;
+            margin-left: 8px;
+        }
+    }
+}

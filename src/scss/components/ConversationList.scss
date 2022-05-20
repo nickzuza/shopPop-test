@@ -1,0 +1,64 @@
+.ConversationList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 295px;
+    max-height: 100%;
+    border-right: 1px solid $gray-e5;
+    overflow: auto;
+
+    &__Filter {
+        display: flex;
+        padding: 16px 0;
+        width: 100%;
+        border-bottom: 1px solid $gray-e5;
+        justify-content: center;
+        
+        &__Buttons {
+            background-color: $gray-e5;
+            display: flex;
+            border: 2px solid $gray-e5;
+        }
+
+        &__Button {
+            font-weight: 600;
+            text-transform: capitalize;
+
+            &:hover {
+                background-color: initial;
+            }
+
+            &.Active {
+                background-color: $white;
+    
+            }
+        }
+    }
+
+    &__Items {
+        width: 100%;
+    }
+
+    &__Item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 16px;
+        border-bottom: 1px solid $gray-e5;
+        transition: background-color .3s;
+        cursor: pointer;
+
+        &__Top {
+            margin-bottom: 10px;
+        }
+
+        &__UserName {
+            font-size: 12px;
+            color: $gray-45;
+        }
+
+        &.Current {
+            background-color: $accent-color;
+        }
+    }
+}

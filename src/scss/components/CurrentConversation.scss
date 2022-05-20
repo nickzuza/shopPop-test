@@ -1,0 +1,56 @@
+.CurrentConversation {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 427px);
+
+    &__Top {
+        height: 50px;
+        border: 1px solid $gray-e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__Middle {
+        height: calc(100% - 250px);
+        overflow: auto;
+    }
+
+    &__List {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        min-height: 100%;
+        padding: 40px;
+
+        &__Item {
+            background-color: $gray-e5;
+            max-width: 45%;
+            width: auto;
+            display: inline-flex;
+            align-self: flex-start;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: $gray-f5;
+            border: 1px solid $gray-f5;
+            margin: 5px 0;
+
+            &.Me {
+                align-self: flex-end;
+                background-color: $white;
+                border-color: $gray-e5;
+            }
+        }
+    }
+
+    &__Bottom {
+        height: 200px;
+        border-top: 1px solid $gray-f5;
+        background-color: $gray-e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 1px 1px 1px $white;
+    }
+}
